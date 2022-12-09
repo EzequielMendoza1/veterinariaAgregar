@@ -11,7 +11,7 @@
     <div class="row">
         <div class="col">
             <hr>
-            <h2 class="text-center">Agregar Nuevo Usuario</h2>
+            <h2 class="text-center">Agregar Nueva Mascota</h2>
             <a href="./mascotas.php" class="btn btn-outline-danger"><i class="fa-solid fa-chevron-left"></i> Regresar</a>
             <hr>
             <form action="../../procesos/mascotas/agregarNuevaMascota.php" method="post">
@@ -60,7 +60,7 @@
 
                     <div class="col">
                         <label for="sexo">Sexo</label>
-                        <select name="sexo" id="sexo" class="form-control" required>
+                        <select name="sexo" id="sexo" class="form-select" required>
                             <option value="">Elige uno...</option>
                             <option value="macho">Macho</option>
                             <option value="hembra">Hembra</option>

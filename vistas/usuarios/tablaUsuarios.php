@@ -25,8 +25,21 @@
             <td><?php echo $ver['nombrePersona'];?></td>
             <td><?php echo $ver['nombreUsuario'];?></td>
             <td><?php echo $ver['nombreRol'];?></td>
-            <td><a href="#" class="btn btn-outline-warning"><i class="fa-regular fa-pen-to-square"></i> Editar</a></td>
-            <td><a href="#" class="btn btn-outline-danger"><i class="fa-solid fa-user-minus"></i> Eliminar</a></td>
+            
+            <td>
+                <a href="#" class="btn btn-outline-warning">
+                    <i class="fa-regular fa-pen-to-square"></i> Editar
+                </a>
+            </td>
+
+
+            <td>
+                <a href="../../procesos/usuario/eliminarUsuario.php?id=<?php echo $ver['idUsuario']; ?>" 
+                    class="btn btn-outline-danger">
+                    <i class="fa-solid fa-ban"></i> Eliminar
+                </a>
+            </td>
+
         </tr>
         <?php } ?>
     </tbody>

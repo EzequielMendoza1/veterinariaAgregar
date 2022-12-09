@@ -23,7 +23,11 @@
             <td><?php echo $ver['nombre']; ?></td>
             <td><?php echo $ver['telefono']; ?></td>
             <td><a href="#" class="btn btn-outline-warning"><i class="fa-regular fa-pen-to-square"></i> Editar</a></td>
-            <td><a href="#" class="btn btn-outline-danger"><i class="fa-solid fa-user-minus"></i> Eliminar</a></td>
+            <td>
+                <a href="../../procesos/persona/eliminarPersona.php?id=<?php echo $ver['id_persona']; ?>" class="btn btn-outline-danger">
+                    <i class="fa-solid fa-user-minus"></i> Eliminar
+                </a>
+            </td>
         </tr>
     <?php } ?>
     </tbody>

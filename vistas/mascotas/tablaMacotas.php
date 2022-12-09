@@ -31,8 +31,15 @@
             <td><?php echo $ver['tamanio'];?></td>
             <td><?php echo $ver['sexo'];?></td>
             <td><?php echo $ver['descripcion'];?></td>
+
             <td><a href="#" class="btn btn-outline-warning"><i class="fa-regular fa-pen-to-square"></i> Editar</a></td>
-            <td><a href="#" class="btn btn-outline-danger"><i class="fa-solid fa-ban"></i> Eliminar</a></td>
+
+            <td>
+                <a href="../../procesos/mascotas/eliminarMascota.php?id=<?php echo $ver['idMascota']; ?>" class="btn btn-outline-danger">
+                    <i class="fa-solid fa-ban"></i> Eliminar
+                </a>
+            </td>
+
         </tr>
         <?php } ?>
     </tbody>

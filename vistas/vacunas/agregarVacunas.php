@@ -25,12 +25,6 @@
                         </select>
                     </div>
 
-                    <div class="col">
-                        <label for="id_usuario">Usuario</label>
-                        <select name="id_usuario" id="id_usuario" class="form-select" required>
-                            <?php echo $Vacunas->opcionesUsuario(); ?>
-                        </select>
-                    </div>
                 </div>
 
                 <br>
@@ -38,7 +32,7 @@
                 <div class="row">
 
                     <div class="col">
-                        <label for="nombre">Nombre</label>
+                        <label for="nombre">Nombre Vacunas</label>
                         <input type="text" name="nombre" id="nombre" class="form-control" required>
                     </div>
 

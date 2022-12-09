@@ -12,9 +12,12 @@
     <div class="row">
         <div class="col">
             <hr>
-            <h2 class="text-center">Agregar Nuevo Usuario</h2>
+            <h2 class="text-center">Agregar Nueva Desparasitacion</h2>
             <a href="./desparasitacion.php" class="btn btn-outline-danger"><i class="fa-solid fa-chevron-left"></i> Regresar</a>
             <hr>
+            <?php
+                print_r($_SESSION);//Imprime todas las sesiones
+            ?>
             <form action="../../procesos/desparasitacion/agregarNuevaDesparasitacion.php" method="post">
                 <div class="row">
 
@@ -25,19 +28,15 @@
                         </select>
                     </div>
 
-                    <div class="col">
-                        <label for="id_usuario">Usuario</label>
-                        <select name="id_usuario" id="id_usuario" class="form-select" required>
-                            <?php echo $Desparasitacion->opcionesUsuario(); ?>
-                        </select>
-                    </div>
                 </div>
 
                 <br>
 
                 <div class="row">
-                    <label for="fecha">Fecha</label>
-                    <input type="date" name="fecha" id="fecha" class="form-control" required>
+                    <div class="col">
+                        <label for="fecha">Fecha</label>
+                        <input type="date" name="fecha" id="fecha" class="form-control" required>
+                    </div>
                 </div>
 
 

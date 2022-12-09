@@ -33,5 +33,13 @@
             return $query->execute();
         }
 
+        public function eliminarMascota($idMascota){
+            $conexion = parent::conectar();//Llamar un metodo por herencia
+            $sql = "DELETE FROM t_mascota WHERE id_mascota = ?";
+            $query = $conexion->prepare($sql);
+            $query->bind_param('i', $idMascota);
+            return $query->execute();
+        }
+
     }
 ?>

@@ -37,5 +37,13 @@
                                         $datos['password']);
             return $query->execute();
         }
+
+        public function eliminarUsuario($idUsuario){
+            $conexion = parent::conectar();//Llamar un metodo por herencia
+            $sql = "DELETE FROM t_usuario WHERE id_usuario = ?";
+            $query = $conexion->prepare($sql);
+            $query->bind_param('i', $idUsuario);
+            return $query->execute();
+        }
     }
 ?>
